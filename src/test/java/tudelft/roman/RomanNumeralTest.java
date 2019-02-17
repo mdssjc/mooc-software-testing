@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 public class RomanNumeralTest {
 
-
     @Test
     public void singleNumber() {
         RomanNumeral roman = new RomanNumeral();
@@ -22,6 +21,7 @@ public class RomanNumeralTest {
 
     @Test
     public void numberWithSubtractiveNotation() {
+
         RomanNumeral roman = new RomanNumeral();
         int result = roman.convert("IV");
         Assertions.assertEquals(4, result);
