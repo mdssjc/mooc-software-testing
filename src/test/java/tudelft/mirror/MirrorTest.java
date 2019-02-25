@@ -33,4 +33,11 @@ public class MirrorTest {
 
         Assertions.assertEquals("aba", result);
     }
+
+    @Test
+    void test04() {
+        String result = mirror.mirrorEnds("aa");
+
+        Assertions.assertEquals("aa", result);
+    }
 }
