@@ -33,4 +33,18 @@ public class GHappyTest {
 
         Assertions.assertFalse(result);
     }
+
+    @Test
+    void test04() {
+        boolean result = gHappy.gHappy("g");
+
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void test05() {
+        boolean result = gHappy.gHappy("gg");
+
+        Assertions.assertTrue(result);
+    }
 }
