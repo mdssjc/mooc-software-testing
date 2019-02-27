@@ -16,5 +16,4 @@ public class CountLettersTest {
         int words = new CountLetters().count("cats|dog");
         Assertions.assertEquals(1, words);
     }
-
 }
