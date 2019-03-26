@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class InvoiceFilterTest {
+
     @Test
     void filterInvoices() {
 
@@ -25,5 +26,4 @@ public class InvoiceFilterTest {
         Assertions.assertEquals(mauricio, result.get(0));
         Assertions.assertEquals(1, result.size());
     }
-
 }

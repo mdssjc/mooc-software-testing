@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 public class InvoiceFilterTest {
+
     @Test
     void filterInvoices() {
 
@@ -24,5 +25,4 @@ public class InvoiceFilterTest {
 
         dao.close();
     }
-
 }

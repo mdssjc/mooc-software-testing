@@ -10,7 +10,9 @@ public class InvoiceDao {
 
     public void InvoiceDao() {
         try {
-            if(c!=null) return;
+            if (c != null) {
+                return;
+            }
 
             c = DriverManager.getConnection("jdbc:hsqldb:file:mymemdb.db", "SA", "");
             c.prepareStatement("create table invoice (name varchar(100), value double)").execute();
@@ -28,7 +30,7 @@ public class InvoiceDao {
 
             ResultSet rs = ps.executeQuery();
 
-            while(rs.next()) {
+            while (rs.next()) {
                 String name = rs.getString("name");
                 double value = rs.getDouble("value");
                 allInvoices.add(new Invoice(name, value));

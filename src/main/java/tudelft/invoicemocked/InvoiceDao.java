@@ -10,7 +10,9 @@ public class InvoiceDao {
 
     public void InvoiceDao() {
         try {
-            if(c!=null) return;
+            if(c!=null) {
+                return;
+            }
 
             c = DriverManager.getConnection("jdbc:hsqldb:file:mymemdb.db", "SA", "");
             c.prepareStatement("create table invoice (name varchar(100), value double)").execute();
