@@ -1,12 +1,14 @@
 package tudelft.discount;
 
+import java.math.BigDecimal;
+
 public class Product {
 
     private String name;
-    private double price;
+    private BigDecimal price;
     private String category;
 
-    public Product(String name, double price, String category) {
+    public Product(String name, BigDecimal price, String category) {
         this.name = name;
         this.price = price;
         this.category = category;
@@ -16,7 +18,7 @@ public class Product {
         return name;
     }
 
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
@@ -24,7 +26,7 @@ public class Product {
         return category;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 }
